@@ -2,3 +2,37 @@ h2,h3 {
   font-size: 1.5em;
   font-family: 'Courier New', Courier, monospace;
 }
+
+/* Que algun descendiente del elemento que tiene la clase contenedor y sea un parrafo*/
+.contenedor p {
+  color: blue;
+}
+
+/* Hijo directo de um elemento con la clase contenedor, que se hijo directo y que sea un parrafo */
+.contenedor>p {
+  color: red;
+}
+
+.contenedor a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+.contenedor>a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* son todos los elementos que son hermanos y adyacentes de un H2 */
+h2~p {
+  color: green;
+}
+
+/* Hermano adyacente de h2 */
+h2+p {
+  color: goldenrod;
+}
+
+h3~p {
+  color: indigo;
+}
