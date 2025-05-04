@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.enlaces{
+  display: inline-block; /* Cambia el display a inline-block para que se comporten como un bloque pero en línea */
+  margin: 0 auto; /* Si el display es inline-block, entonces no se puede centra los enlaces horizontalmente */
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 30px;
+}
+/* 
+1000 - inline css
+100  - ID
+10   -  Class Atributos 
+1    - Elemento
+*/
