@@ -1,0 +1,40 @@
+/* border-box permite que el padding no influya en el tamaño del elemento */
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  /* box-sizing: content-box; El padding influye en el tamaño del elemento */
+}
+
+/* El margin auto, centra el elemento si es que es un elemento en linea */
+.box {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+}
+
+.box1{
+  /* margin: 10px 30px; */
+  background-color: aqua;
+  margin: 0 auto; /* Centra el elemento en la pantalla 0 arriba y abajo */
+}
+
+.box2{
+  background-color: coral;
+}
+
+.box3{
+  background-color: lightgreen;
+  border: 1px solid transparent;
+}
+
+p {
+  background: burlywood;
+  margin-top: 20px;
+}
+
+.box4{
+  background-color: lightblue;
+  padding: 20px; /* Espacio interno */
+  overflow: hidden; /* Oculta el contenido que se sale del elemento */
+}
