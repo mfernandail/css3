@@ -33,3 +33,29 @@
 | `inherit`         | Hereda el valor de su elemento padre.                                            |
 | `initial`         | Restaura al valor por defecto definido por el navegador.                         |
 | `unset`           | Hereda si es heredable, si no, aplica `initial`.                                |
+
+
+## unidades de medida
+
+### 📏 Unidades de medida en CSS
+
+| Unidad  | Tipo       | Basado en...                                      | Ejemplo        | Comentario útil                                             |
+|---------|------------|---------------------------------------------------|----------------|-------------------------------------------------------------|
+| `px`    | Absoluta   | Píxeles de la pantalla                            | `16px`         | Fijo. No escala con el tamaño del texto del usuario.        |
+| `%`     | Relativa   | Tamaño del elemento padre                         | `50%`          | Muy útil en diseños fluidos y responsivos.                  |
+| `em`    | Relativa   | Tamaño de fuente del elemento **padre**           | `1.5em`        | Escala según el contenedor. Puede acumularse.              |
+| `rem`   | Relativa   | Tamaño de fuente del **root** (`html`)            | `1rem`         | Más predecible que `em`. Ideal para diseño escalable.      |
+| `lh`    | Relativa   | Altura de línea (`line-height`) del elemento      | `1lh`          | Muy útil para espaciado vertical en tipografía fluida.     |
+| `vw`    | Relativa   | 1% del ancho de la ventana del navegador          | `50vw`         | Cambia con el tamaño de la ventana (viewport).             |
+| `vh`    | Relativa   | 1% del alto de la ventana del navegador           | `100vh`        | Muy útil para secciones de pantalla completa.              |
+| `vmin`  | Relativa   | 1% del valor menor entre `vw` y `vh`              | `10vmin`       | Escala proporcional al lado más corto del viewport.         |
+| `vmax`  | Relativa   | 1% del valor mayor entre `vw` y `vh`              | `10vmax`       | Escala proporcional al lado más largo del viewport.         |
+| `ch`    | Relativa   | Ancho del caracter "0" en la fuente actual        | `40ch`         | Útil para definir anchos de texto (p. ej. 60 caracteres).   |
+| `ex`    | Relativa   | Altura de la letra "x" en la fuente actual        | `1ex`          | Menos usada, varía según la fuente.                         |
+| `cm`, `mm`, `in` | Absoluta | Medidas físicas (centímetros, milímetros, pulgadas) | `2cm`, `1in` | Poco prácticas en pantallas, más útiles en impresión.      |
+
+## 🧠 Mejores prácticas generales
+1. Usa rem para la base tipográfica → así puedes cambiar todo el diseño desde una sola regla en html (ej: html { font-size: 16px; }).
+2. Evita px para texto o espaciado si te importa la accesibilidad.
+3. Usa em dentro de componentes pequeños si quieres que se escalen localmente.
+4. Para diseños fluidos, mezcla rem + % + vw/vh dependiendo del caso.
