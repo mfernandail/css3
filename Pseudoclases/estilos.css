@@ -1,0 +1,202 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.enlace{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f1cac3;
+  padding: 20px;
+  margin-bottom: 3px;
+
+}
+.enlace:link{
+  color: #800080;
+}
+
+.enlace:visited{
+  color: #51a132;
+}
+
+.enlace:hover{
+  background-color: aqua;
+}
+
+.enlace:active{
+  background-color: #008066;
+}
+
+.event{
+  display: inline-block;
+  padding: 15px 25px;
+  color: #fff;
+  background-color: red;
+  text-decoration: none;
+  margin: 30px;
+}
+
+.event:hover{
+  padding: 30px;
+}
+
+#objetivo{
+  width: 100px;
+  height: 100px;
+  background-color: #800080;
+  margin-left: 30px;
+  transition: .3s;
+}
+
+#objetivo:target{
+  margin-left: 300px;
+}
+
+
+.form{
+  background-color: #0000000a;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 21px rgba(0, 0, 0, .3);
+}
+
+input{
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  border: none;
+}
+
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  outline: none;
+}
+
+input[type="checkbox"]{
+  display: inline-block;
+}
+
+
+
+/* .enlace{
+    display: block;
+    background: tomato;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid #ebd1db;
+}
+
+.enlace:link{
+    background: burlywood;
+    color: #000;
+}
+
+.enlace:visited{
+    background: crimson;
+}
+
+
+.enlace:hover{
+    padding: 40px 20px;
+    transition: .3s;
+}
+
+.enlace:active{
+    background: steelblue;
+    color:#fff;
+}
+
+.event{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: crimson;
+    color:#fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.event:active{
+    padding: 23px;
+}
+
+#objetivo{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: steelblue;
+    transition: .3s;
+}
+
+#objetivo:target{
+    margin-left: 150px;
+}
+
+.form{
+    width: 80%;
+    margin: 30px auto;
+    background: #f2f2f2;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    padding: 30px;
+}
+
+.form:focus-within{
+    background: darkcyan;
+}
+
+.form__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input{
+    display: block;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+input:focus{
+    background: rgba(220, 20, 60, 0.424);
+    color: #fff;
+}
+
+input[type="checkbox"]:checked + label{
+    background: crimson;
+    color: #fff;
+}
+
+
+h3{
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Arial';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3:not(.title):not(:hover){
+    color: crimson;
+}
+
+h3:not(:hover){
+    text-decoration: line-through;
+} */
